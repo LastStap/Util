@@ -21,7 +21,7 @@ public class ShapeTest {
 
     @Test
     public void shouldCorrectlyComputeSquareArea() {
-        Square square = new Square(ShapeType.SQUARE, 6, 6);
+        Square square = new Square(ShapeType.SQUARE, 6);
         double expectedArea = 6 * 6;
         assertEquals(expectedArea, square.calculateArea(), 0.0001);
     }
