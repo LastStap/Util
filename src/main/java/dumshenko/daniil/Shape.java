@@ -19,8 +19,7 @@ public class Shape {
     }
 
     public void displayInfo() {
-        System.out.println("This is abstract figure");
-
+        System.out.println("This is an abstract shape");
     }
 }
 
