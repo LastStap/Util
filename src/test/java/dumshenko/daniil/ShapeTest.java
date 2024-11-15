@@ -13,7 +13,7 @@ public class ShapeTest {
     }
 
     @Test
-    public void testRectangleArea() {
+    public void shouldCorrectlyComputeRectangleArea() {
         Rectangle rectangle = new Rectangle(FigureType.RECTANGLE, 5, 6);
         double expectedArea = 5 * 6;
         assertEquals(expectedArea, rectangle.calculateArea(), 0.0001);
