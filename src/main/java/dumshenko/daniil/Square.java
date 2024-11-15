@@ -13,7 +13,7 @@ public class Square extends Rectangle {
 
     @Override
     public void displayInfo() {
-        System.out.println("I`m Square ");
+        System.out.println("I'm Square ");
         System.out.println("My width: " + squareWidth);
         System.out.println("My height: " + squareHeight);
     }
