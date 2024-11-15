@@ -1,18 +1,32 @@
 package dumshenko.daniil;
 
-import static dumshenko.daniil.Util.removeOccurrences;
-
 public class Main {
 
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4, 2, 5, 2};
+//        int[] array = {1, 2, 3, 4, 2, 5, 2};
+//
+//        int numToRemove = 2;
+//
+//        int[] result = removeOccurrences(array, numToRemove);
+//
+//        for (int num : result) {
+//            System.out.print(num + " ");
+//        }
 
-        int numToRemove = 2;
+        Shape circle = new Circle(ShapeType.CIRCLE, 10);
 
-        int[] result = removeOccurrences(array, numToRemove);
+        circle.displayInfo();
+        System.out.println("My area: " + circle.calculateArea());
 
-        for (int num : result) {
-            System.out.print(num + " ");
-        }
+        Shape rectangle = new Rectangle(ShapeType.RECTANGLE, 5, 6);
+
+        rectangle.displayInfo();
+        System.out.println("My area: " + rectangle.calculateArea());
+
+        Rectangle square = new Square(ShapeType.SQUARE, 6);
+
+        square.displayInfo();
+        System.out.println("My area: " + square.calculateArea());
+
     }
 }
