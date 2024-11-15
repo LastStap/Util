@@ -1,6 +1,6 @@
 package dumshenko.daniil;
 
-enum FigureType {
+enum ShapeType {
     CIRCLE,
     RECTANGLE,
     SQUARE
