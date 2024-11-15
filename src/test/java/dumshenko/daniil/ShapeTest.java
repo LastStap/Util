@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class ShapeTest {
 
     @Test
-    public void testCircleArea() {
+    public void shouldCorrectlyComputeCircleArea() {
         Circle circle = new Circle(FigureType.CIRCLE, 10);
         double expectedArea = 3.14159 * 10 * 10;
         assertEquals(expectedArea, circle.calculateArea(), 0.0001);
