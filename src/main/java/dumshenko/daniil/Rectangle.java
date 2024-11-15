@@ -20,8 +20,7 @@ public class Rectangle extends Shape {
 
     @Override
     public double calculateArea() {
-        figureArea = (rectangleWidth * rectangleHeight);
-        return figureArea;
+        return rectangleWidth * rectangleHeight;
     }
 
 }
