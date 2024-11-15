@@ -16,8 +16,7 @@ public class Main {
         Shape circle = new Circle(FigureType.CIRCLE, 10);
 
         circle.displayInfo();
-        System.out.print("My area: ");
-        System.out.println(circle.calculateArea());
+        System.out.println("My area: " + circle.calculateArea());
 
         Shape rectangle = new Rectangle(FigureType.RECTANGLE, 5, 6);
 
