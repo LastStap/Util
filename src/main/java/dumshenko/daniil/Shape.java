@@ -3,10 +3,11 @@ package dumshenko.daniil;
 enum ShapeType {
     CIRCLE,
     RECTANGLE,
-    SQUARE
+    SQUARE,
+    TRIANGLE
 }
 
-public class Shape {
+abstract class Shape {
     ShapeType shapeType;
     public double area;
 
@@ -14,12 +15,12 @@ public class Shape {
         this.shapeType = shapeType;
     }
 
-    public double calculateArea() {
-        return area;
-    }
+    abstract double calculateArea();
 
-    public void displayInfo() {
-        System.out.println("This is an abstract shape");
+    abstract double calculatePerimeter();
 
+    void displayInfo() {
+        System.out.println("Площа: " + calculateArea());
+        System.out.println("Периметр: " + calculatePerimeter());
     }
 }

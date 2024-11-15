@@ -19,4 +19,9 @@ public class Circle extends Shape {
     public double calculateArea() {
         return Math.PI * Math.pow(radius, 2.0); //Формула для обчислення площі круга
     }
+
+    @Override
+    double calculatePerimeter() {
+        return 2 * Math.PI * radius;
+    }
 }
