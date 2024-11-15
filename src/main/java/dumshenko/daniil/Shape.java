@@ -1,26 +1,25 @@
 package dumshenko.daniil;
 
-enum FigureType {
+enum ShapeType {
     CIRCLE,
     RECTANGLE,
     SQUARE
 }
 
 public class Shape {
-    FigureType typeOfFigure;
-    public double figureArea = 0;
+    ShapeType shapeType;
+    public double area;
 
-    public Shape(FigureType typeOfFigure) {
-        this.typeOfFigure = typeOfFigure;
+    public Shape(ShapeType shapeType) {
+        this.shapeType = shapeType;
     }
 
     public double calculateArea() {
-        return figureArea;
+        return area;
     }
 
     public void displayInfo() {
-        System.out.println("This is abstract figure");
+        System.out.println("This is an abstract shape");
 
     }
 }
-

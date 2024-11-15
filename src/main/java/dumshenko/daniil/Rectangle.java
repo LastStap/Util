@@ -2,26 +2,24 @@ package dumshenko.daniil;
 
 public class Rectangle extends Shape {
 
-    private double rectangleWidth;
-    private double rectangleHeight;
+    double width;
+    double height;
 
-    public Rectangle(FigureType typeOfFigure, double rectangleWidth, double rectangleHeight) {
-        super(typeOfFigure);
-        this.rectangleWidth = rectangleWidth;
-        this.rectangleHeight = rectangleHeight;
+    public Rectangle(ShapeType shapeType, double width, double height) {
+        super(shapeType);
+        this.width = width;
+        this.height = height;
     }
 
     @Override
     public void displayInfo() {
-        System.out.println("I`m Rectangle ");
-        System.out.println("My width: " + rectangleWidth);
-        System.out.println("My height: " + rectangleHeight);
+        System.out.println("I'm Rectangle ");
+        System.out.println("My width: " + width);
+        System.out.println("My height: " + height);
     }
 
     @Override
     public double calculateArea() {
-        figureArea = (rectangleWidth * rectangleHeight);
-        return figureArea;
+        return width * height;
     }
-
 }

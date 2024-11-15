@@ -13,23 +13,20 @@ public class Main {
 //            System.out.print(num + " ");
 //        }
 
-        Shape circle = new Circle(FigureType.CIRCLE, 10);
+        Shape circle = new Circle(ShapeType.CIRCLE, 10);
 
         circle.displayInfo();
-        System.out.print("My area: ");
-        System.out.println(circle.calculateArea());
+        System.out.println("My area: " + circle.calculateArea());
 
-        Shape rectangle = new Rectangle(FigureType.RECTANGLE, 5, 6);
+        Shape rectangle = new Rectangle(ShapeType.RECTANGLE, 5, 6);
 
         rectangle.displayInfo();
-        System.out.print("My area: ");
-        System.out.println(rectangle.calculateArea());
+        System.out.println("My area: " + rectangle.calculateArea());
 
-        Rectangle square = new Square(FigureType.SQUARE, 6, 6);
+        Rectangle square = new Square(ShapeType.SQUARE, 6);
 
         square.displayInfo();
-        System.out.print("My area: ");
-        System.out.println(square.calculateArea());
+        System.out.println("My area: " + square.calculateArea());
 
     }
 }
