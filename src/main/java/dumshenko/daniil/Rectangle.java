@@ -13,7 +13,7 @@ public class Rectangle extends Shape {
 
     @Override
     public void displayInfo() {
-        System.out.println("I`m Rectangle ");
+        System.out.println("I'm Rectangle ");
         System.out.println("My width: " + rectangleWidth);
         System.out.println("My height: " + rectangleHeight);
     }
