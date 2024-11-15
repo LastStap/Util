@@ -8,7 +8,7 @@ public class ShapeTest {
     @Test
     public void shouldCorrectlyComputeCircleArea() {
         Circle circle = new Circle(ShapeType.CIRCLE, 10);
-        double expectedArea = 3.14159 * 10 * 10;
+        double expectedArea = Math.PI * 10 * 10;
         assertEquals(expectedArea, circle.calculateArea(), 0.0001);
     }
 
