@@ -2,8 +2,6 @@ package dumshenko.daniil;
 
 public class Square extends Rectangle {
 
-    private double squareWidth;
-    private double squareHeight;
 
     public Square(FigureType typeOfFigure, double squareWidth, double squareHeight) {
         super(typeOfFigure, squareWidth, squareHeight);
