@@ -18,8 +18,4 @@ public class Square extends Rectangle {
         System.out.println("My height: " + squareHeight);
     }
 
-    @Override
-    public double calculateArea() {
-        return super.calculateArea();
-    }
 }
