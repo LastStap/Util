@@ -8,7 +8,7 @@ enum FigureType {
 
 public class Shape {
     FigureType figureType;
-    public double figureArea = 0;
+    public double area;
 
     public Shape(FigureType typeOfFigure) {
         this.typeOfFigure = typeOfFigure;
