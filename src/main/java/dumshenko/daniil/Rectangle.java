@@ -22,4 +22,9 @@ public class Rectangle extends Shape {
     public double calculateArea() {
         return width * height;
     }
+
+    @Override
+    double calculatePerimeter() {
+        return (width * 2) + (height * 2);
+    }
 }
