@@ -3,10 +3,8 @@ package dumshenko.daniil;
 public class Square extends Rectangle {
 
 
-    public Square(FigureType typeOfFigure, double squareWidth, double squareHeight) {
-        super(typeOfFigure, squareWidth, squareHeight);
-        this.squareWidth = squareWidth;
-        this.squareHeight = squareHeight;
+    public Square(FigureType typeOfFigure, double size) {
+        super(typeOfFigure, size, size);
     }
 
     @Override
