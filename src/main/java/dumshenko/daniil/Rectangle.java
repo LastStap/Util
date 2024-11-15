@@ -2,8 +2,8 @@ package dumshenko.daniil;
 
 public class Rectangle extends Shape {
 
-    private double rectangleWidth;
-    private double rectangleHeight;
+    private double width;
+    private double height;
 
     public Rectangle(FigureType typeOfFigure, double rectangleWidth, double rectangleHeight) {
         super(typeOfFigure);
