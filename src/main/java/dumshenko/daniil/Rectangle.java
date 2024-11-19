@@ -5,8 +5,8 @@ public class Rectangle extends Shape {
     double width;
     double height;
 
-    public Rectangle(ShapeType shapeType, double width, double height) {
-        super(shapeType);
+    public Rectangle(double width, double height) {
+        super(ShapeType.RECTANGLE);
         this.width = width;
         this.height = height;
     }

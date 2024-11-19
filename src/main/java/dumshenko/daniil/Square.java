@@ -2,8 +2,8 @@ package dumshenko.daniil;
 
 public class Square extends Rectangle {
 
-    public Square(ShapeType shapeType, double size) {
-        super(shapeType, size, size);
+    public Square(double size) {
+        super(ShapeType.SQUARE, size, size);
     }
 
     @Override

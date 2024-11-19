@@ -9,7 +9,7 @@ public class ShapeTest {
     @Test
     public void shouldCorrectlyComputeCircleArea() {
         // Given
-        Circle circle = new Circle(ShapeType.CIRCLE, 10);
+        Circle circle = new Circle(10);
         double expectedArea = Math.PI * 10 * 10;
 
         // When
@@ -22,7 +22,7 @@ public class ShapeTest {
     @Test
     public void shouldCorrectlyComputeRectangleArea() {
         // Given
-        Rectangle rectangle = new Rectangle(ShapeType.RECTANGLE, 5, 6);
+        Rectangle rectangle = new Rectangle(5, 6);
         double expectedArea = 5 * 6;
 
         // When
@@ -35,7 +35,7 @@ public class ShapeTest {
     @Test
     public void shouldCorrectlyComputeTriangleArea() {
         // Given
-        Shape triangle = new Triangle(ShapeType.TRIANGLE, 6, 4, 4);
+        Shape triangle = new Triangle(6, 4, 4);
         double expectedArea = Math.sqrt(7 * (7 - 6) * (7 - 4) * (7 - 4));
 
         // When
@@ -49,7 +49,7 @@ public class ShapeTest {
     @Test
     public void shouldCorrectlyComputeSquareArea() {
         // Given
-        Shape square = new Square(ShapeType.SQUARE, 5);
+        Shape square = new Square(5);
         double expectedArea = 5 * 5;
 
         // When
@@ -62,7 +62,7 @@ public class ShapeTest {
     @Test
     public void shouldCorrectlyComputeSquarePerimeter() {
         //Given
-        Shape square = new Square(ShapeType.SQUARE, 5);
+        Shape square = new Square(5);
         double expectedPerimeter = (5 * 2) + (5 * 2);
 
         //When
@@ -75,7 +75,7 @@ public class ShapeTest {
     @Test
     public void shouldCorrectlyComputeRectanglePerimeter() {
         //Given
-        Shape rectangle = new Rectangle(ShapeType.RECTANGLE, 5, 6);
+        Shape rectangle = new Rectangle(5, 6);
         double expectedPerimeter = (5 * 2) + (6 * 2);
 
         //When
@@ -88,7 +88,7 @@ public class ShapeTest {
     @Test
     public void shouldCorrectlyComputeCirclePerimeter() {
         //Given
-        Shape circle = new Circle(ShapeType.CIRCLE, 10);
+        Shape circle = new Circle(10);
         double expectedPerimeter = 2 * Math.PI * 10;
 
         //When
@@ -101,7 +101,7 @@ public class ShapeTest {
     @Test
     public void shouldCorrectlyComputeTrianglePerimeter() {
         //Given
-        Shape triangle = new Triangle(ShapeType.TRIANGLE, 6, 3, 4);
+        Shape triangle = new Triangle(6, 3, 4);
         double expectedPerimeter = 6 + 3 + 4;
 
         //When
