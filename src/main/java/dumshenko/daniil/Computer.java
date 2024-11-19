@@ -1,5 +1,6 @@
 package dumshenko.daniil;
 
+import java.util.Objects;
 import java.util.UUID;
 
 enum OperatingSystem {
@@ -21,6 +22,23 @@ public class Computer {
         this.name = name;
         this.serialNumber = serialNumber;
         this.os = os;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Computer computer = (Computer) o;
+        return ram == computer.ram &&
+                cores == computer.cores &&
+                Objects.equals(name, computer.name) &&
+                Objects.equals(serialNumber, computer.serialNumber) &&
+                os == computer.os;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(ram, cores, name, serialNumber, os);
     }
 
     @Override

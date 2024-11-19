@@ -5,8 +5,8 @@ public class Rectangle extends Shape {
     double width;
     double height;
 
-    public Rectangle(ShapeType shapeType, double width, double height) {
-        super(shapeType);
+    public Rectangle(double width, double height) {
+        super(ShapeType.RECTANGLE);
         this.width = width;
         this.height = height;
     }
@@ -21,5 +21,10 @@ public class Rectangle extends Shape {
     @Override
     public double calculateArea() {
         return width * height;
+    }
+
+    @Override
+    double calculatePerimeter() {
+        return (width * 2) + (height * 2);
     }
 }

@@ -4,8 +4,8 @@ public class Circle extends Shape {
 
     private double radius;
 
-    public Circle(ShapeType shapeType, double radius) {
-        super(shapeType);
+    public Circle(double radius) {
+        super(ShapeType.CIRCLE);
         this.radius = radius;
     }
 
@@ -18,5 +18,10 @@ public class Circle extends Shape {
     @Override
     public double calculateArea() {
         return Math.PI * Math.pow(radius, 2.0); //Формула для обчислення площі круга
+    }
+
+    @Override
+    double calculatePerimeter() {
+        return 2 * Math.PI * radius;
     }
 }
