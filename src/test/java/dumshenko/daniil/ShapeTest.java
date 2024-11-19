@@ -36,7 +36,7 @@ public class ShapeTest {
     public void shouldCorrectlyComputeTriangleArea() {
         // Given
         Shape triangle = new Triangle(6, 4, 4);
-        double expectedArea = Math.sqrt(7 * (7 - 6) * (7 - 4) * (7 - 4));
+        double expectedArea = Math.sqrt(7 * (7 - 4) * (7 - 4));
 
         // When
         double actualArea = triangle.calculateArea();
